@@ -26,7 +26,7 @@ A modern, responsive weather application that displays real-time weather informa
 
    ```sh
    git clone https://github.com/Shamik004/Ai-Weather-App.git
-   cd ai-weather-app
+   cd Ai-Weather-App
    ```
 
 2. **Open `index.html` in your browser.**

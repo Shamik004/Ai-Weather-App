@@ -1,5 +1,5 @@
-const apiKey = '6df72b3ff4f3dce55d988f3081d18631'; // Weather API key
-const geminiApiKey = 'AIzaSyDpWRu-JUU8SpsDZ8Tj68Dp1bXTaa3ouFE'; // Replace with your actual Gemini API key
+const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY'; // Weather API key
+const geminiApiKey = 'YOUR_GEMINI_API_KEY'; // Replace with your actual Gemini API key
 const cityElement = document.getElementById('city');
 const weatherEmoji = document.getElementById('weather-emoji');
 const temperatureElement = document.getElementById('temperature');
