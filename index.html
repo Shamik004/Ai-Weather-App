@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App with Chatbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-card">
+        <h1 id="city" class="city">Getting location...</h1>
+        <div class="weather-emoji" id="weather-emoji">⏳</div>
+        <div class="temperature" id="temperature"></div>
+        <div class="description" id="description"></div>
+        <div class="weather-details" id="weather-details"></div>
+        <p class="error hidden" id="error"></p>
+        <p class="loading" id="loading"></p>
+    </div>
+
+    <button class="chat-button" onclick="toggleChatbot()">💬</button>
+
+    <div class="chatbot-container" id="chatbot">
+        <div class="chatbot-header">
+            <h2>Weather Assistant</h2>
+            <button class="chatbot-close" onclick="toggleChatbot()">×</button>
+        </div>
+        <div class="chatbot-body" id="chatbot-body">
+            <div class="message ai">
+                <div class="ai-response">
+                    <p><strong>Welcome!</strong></p>
+                    <p>Hi! How can I help you today?</p>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chat-input" placeholder="Type your message..." onkeypress="if(event.key === 'Enter') sendMessage()">
+            <button onclick="sendMessage()">&#x27A4;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</html>
